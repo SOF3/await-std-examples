@@ -34,8 +34,10 @@ final class Main extends PluginBase {
 					$target = $event->getEntity();
 					if(!($target instanceof Player)) {
 						$sender->sendMessage("You can only ban players. Try clicking agian.");
+						continue;
+					} else {
+						break;
 					}
-					break;
 				}
 				$sender->sendMessage("[BanHammer] Selected {$target->getName()}.");
 				$sender->sendMessage("[BanHammer] Type the ban message.");
