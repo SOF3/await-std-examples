@@ -39,7 +39,7 @@ final class Main extends PluginBase {
 				}
 				$sender->sendMessage("[BanHammer] Selected {$target->getName()}.");
 				$sender->sendMessage("[BanHammer] Type the ban message.");
-				$message = $sender->nextChat();
+				$message = yield $sender->nextChat();
 				$this->getServer()->getNameBans()->addBan($target->getName(), $message);
 				$target->kick("Banned: $message");
 				$sender->sendMessage("{$target->getName()} has been banned.");
