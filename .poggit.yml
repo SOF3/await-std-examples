@@ -2,5 +2,5 @@ projects:
   BanHammer:
     path: BanHammer
     libs:
-      - src: SOFe/await-std/await-std
+      - src: SOF3/await-std/await-std
         version: "^0.1.0"
