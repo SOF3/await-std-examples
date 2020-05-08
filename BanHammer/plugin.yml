@@ -1,0 +1,9 @@
+name: BanHammer
+version: 0.1.0
+main: SOFe\BanHammer\Main
+api: [3.12.0]
+authors: [SOFe]
+commands:
+  bh:
+    description: Use the ban hammer
+    usage: /bh
