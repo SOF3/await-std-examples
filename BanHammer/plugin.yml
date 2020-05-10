@@ -7,3 +7,11 @@ commands:
   bh:
     description: Use the ban hammer
     usage: /bh
+    permission: banhammer.use
+
+permissions:
+  banhammer:
+    children:
+      banhammer.use:
+        description: Permission to use /bh
+        default: op
